@@ -147,8 +147,8 @@ i:hover {
   }
 
   #icon {
-    right: 225px;
-    bottom: 225px;
+    transform: translate(-50%, -50%);
+    width: 50vw;
   }
   #send {
     right: 5%;
