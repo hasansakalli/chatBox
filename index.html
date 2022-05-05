@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9753036172.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <img id="icon" onclick="openBox()" src="images/icon.png" alt="" />
+
+    <div class="container">
+      <div class="header">
+        <img id="logo" src="images/evblogo.png" />
+        <p id="text">Live Chat</p>
+        <img id="icon2" src="images/icon2.png" alt="" />
+        <i class="fa-solid fa-xmark" onclick="closeBox()"></i>
+      </div>
+      <div class="message"></div>
+      <input id="inputText" type="text" name="" id="" />
+      <img id="send" src="images/send.png" onclick="send()" alt="" />
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

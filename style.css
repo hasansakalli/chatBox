@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  opacity: 0;
+  display: grid;
+  grid-row: auto;
+  flex-direction: column;
+  width: 25%;
+  height: 70%;
+  background-color: #1d97d4fa;
+  transition: all 1000ms ease;
+  transform: translateX(150%);
+  padding: 0.6rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.containerActive {
+  opacity: 1;
+  width: 25%;
+  max-height: 70%;
+  transform: translateX(0%);
+}
+input {
+  width: 100%;
+  height: 15px;
+  padding: 1.2rem;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+
+#icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right: 5px;
+  bottom: 20px;
+  width: 5vw;
+  cursor: pointer;
+  transition: all 1000ms;
+  opacity: 1;
+  display: inline-block;
+}
+#icon2 {
+  width: 20%;
+  cursor: pointer;
+  opacity: 1;
+  z-index: 1;
+  transition: all 1000ms;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  border-radius: 5px 5px 0px 0px;
+  border: 1px solid skyblue;
+  margin: 0;
+}
+
+#logo {
+  width: 5vw;
+}
+#send {
+  width: 40px;
+  position: absolute;
+  right: 5%;
+  bottom: 3.7%;
+  opacity: 0.6;
+  cursor: pointer;
+}
+#send:hover {
+  opacity: 1;
+  transition: all 500ms;
+}
+.newLi {
+  color: rgb(0, 0, 0);
+  list-style: none;
+  background-color: #fff;
+  margin-bottom: 4px;
+  padding: 3px;
+  width: fit-content;
+  border-radius: 5px 5px 5px 0px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.message {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  display: grid;
+  height: 44vh;
+  align-content: flex-end;
+  padding: 0.5rem;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #d9e3e857;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+#text {
+  padding: 0.3rem;
+  border: 2px solid skyblue;
+  border-radius: 5px;
+  color: rgb(1, 65, 1);
+  font-size: clamp(0.3125rem, -0.0114rem + 1.7273vw, 1.5rem);
+}
+i {
+  position: absolute;
+  right: 0;
+  top: -14px;
+
+  background-color: rgb(21, 166, 223);
+  padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+  border-radius: 100%;
+}
+i:hover {
+  background-color: black;
+  color: rgb(186, 58, 58);
+  cursor: pointer;
+  transition: all 400ms;
+}
+@media (max-width: 768px) {
+  .container {
+    min-width: 30vw;
+    height: 70%;
+  }
+
+  #icon {
+    right: 225px;
+    bottom: 225px;
+  }
+  #send {
+    right: 5%;
+    bottom: 2.7%;
+  }
+}
