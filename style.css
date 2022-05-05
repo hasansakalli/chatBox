@@ -51,7 +51,6 @@ input {
   cursor: pointer;
   transition: all 1000ms;
   opacity: 1;
-  display: inline-block;
 }
 #icon2 {
   width: 20%;
@@ -80,7 +79,7 @@ input {
   width: 40px;
   position: absolute;
   right: 5%;
-  bottom: 3.7%;
+  bottom: 4.5%;
   opacity: 0.6;
   cursor: pointer;
 }
@@ -94,22 +93,20 @@ input {
   background-color: #fff;
   margin-bottom: 4px;
   padding: 3px;
-  width: fit-content;
-  border-radius: 5px 5px 5px 0px;
-  font-size: 14px;
+
+  border-radius: 5px 5px 0px 5px;
+  font-size: 13px;
   font-weight: 500;
   line-height: 19px;
-
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.message {
+.genel {
   margin-top: 0.5rem;
-  margin-bottom: 1rem;
   display: grid;
-  height: 44vh;
   align-content: flex-end;
+  height: 44vh;
   padding: 0.5rem;
   border-radius: 5px;
   overflow: hidden;
@@ -118,12 +115,34 @@ input {
     rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
+#otoMessage {
+  width: 60%;
+  display: grid;
+  align-content: flex-end;
+  justify-content: left;
+  justify-items: left;
+  text-align: left;
+  font-size: 13px;
+  border-radius: 5px 5px 5px 0px;
+  background-color: rgb(133, 240, 165);
+}
+
+.message {
+  display: grid;
+  align-content: flex-end;
+  justify-content: right;
+  justify-items: right;
+  text-align: right;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
 #text {
   padding: 0.3rem;
   border: 2px solid skyblue;
   border-radius: 5px;
   color: rgb(1, 65, 1);
-  font-size: clamp(0.3125rem, -0.0114rem + 1.7273vw, 1.5rem);
 }
 i {
   position: absolute;
@@ -140,25 +159,24 @@ i:hover {
   cursor: pointer;
   transition: all 400ms;
 }
-@media (max-width: 1000px) {
-    .containerActive{
-        opacity: 1;
-        width: 80%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        
-      }
-   
+@media (max-width: 768px) {
+  .containerActive {
+    opacity: 1;
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
   #icon {
     transform: translate(-50%, -50%);
     width: 50%;
-   
   }
   #send {
     right: 5%;
-    bottom: 2.7%;
-    
+    bottom: 4.8%;
+  }
+  #logo {
+    width: 20%;
   }
 }
