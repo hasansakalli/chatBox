@@ -140,18 +140,23 @@ i:hover {
   cursor: pointer;
   transition: all 400ms;
 }
-@media (max-width: 768px) {
-  .container {
-    min-width: 30vw;
-    height: 70%;
-  }
+@media (max-width: 800px) {
+    .container, .containerActive{
+        opacity: 1;
+        width: 100%;
+        max-height: 70%;
+        
+      }
+   
 
   #icon {
     transform: translate(-50%, -50%);
-    width: 50vw;
+    width: 100%;
   }
   #send {
     right: 5%;
     bottom: 2.7%;
+    
   }
 }
+
